@@ -1,0 +1,194 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namrata Sharma | Portfolio</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">Namrata Sharma</div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero animate-section">
+    <div class="hero-left animate-left">
+        <img src="{% static 'images/profile.jpg' %}" alt="Namrata" class="profile-img">
+    </div>
+    <div class="hero-right animate-right">
+        <h1>Hi, I’m Namrata</h1>
+        <p>Web Developer | UI/UX Designer | Open to Work</p>
+
+        <a href="#projects" class="btn">See My Work</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<!-- <section id="about" class="about animate-section">
+    <div class="about-container">
+        <div class="about-text animate-up">
+            <h2>About Me</h2>
+            <p>
+Hello! I’m Namrata Sharma, a final-year Bachelor of Computer Engineering student with a strong passion for developing modern, responsive, and user-friendly web applications. I specialize in Django and Python, and I also have experience with PHP, HTML, CSS, JavaScript, and other modern web technologies.  
+I love creating clean, professional designs with smooth animations and excellent user experiences. I am highly motivated, always eager to learn new technologies, and open to exciting internship or job opportunities in web development and software engineering.  
+My goal is to build scalable and innovative solutions while continuously improving my skills and contributing to impactful projects.
+</p>
+
+        </div>
+    </div>
+</section> -->
+
+<!-- ABOUT -->
+<section id="about" class="about animate-section">
+    <div class="about-container">
+        <div class="about-card animate-up">
+            <h2>About Me</h2>
+            <p>
+Hello! I’m Namrata Sharma, a final-year Bachelor of Computer Engineering student with a strong passion for developing modern, responsive, and user-friendly web applications. I specialize in Django and Python, and I also have experience with PHP, HTML, CSS, JavaScript, and other modern web technologies.  
+
+I love creating clean, professional designs with smooth animations and excellent user experiences. I am highly motivated, always eager to learn new technologies, and open to exciting internship or job opportunities in web development and software engineering.  
+
+My goal is to build scalable and innovative solutions while continuously improving my skills and contributing to impactful projects.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- SKILLS -->
+<!-- SKILLS -->
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skill-card">
+            <i class="fab fa-python"></i>
+            <h3>Python / Django</h3>
+        </div>
+        <div class="skill-card">
+            <i class="fab fa-php"></i>
+            <h3>PHP</h3>
+        </div>
+        <div class="skill-card">
+            <i class="fab fa-html5"></i>
+            <h3>HTML5</h3>
+        </div>
+        <div class="skill-card">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS3</h3>
+        </div>
+        <div class="skill-card">
+            <i class="fab fa-js"></i>
+            <h3>JavaScript</h3>
+        </div>
+        <div class="skill-card">
+            <i class="fab fa-github"></i>
+            <h3>GitHub</h3>
+        </div>
+        <div class="skill-card">
+            <i class="fas fa-pencil-ruler"></i>
+            <h3>Figma</h3>
+        </div>
+    </div>
+    
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects" class="projects animate-section">
+    <h2 class="animate-up">Projects</h2>
+    <div class="project-cards">
+        <div class="card animate-up">
+            <img src="{% static 'images/project1.jpg' %}" alt="Doctor Appointment System">
+            
+            <div class="overlay">
+                <h3>Doctor Appointment System</h3>
+                <p>Doctor Appointment web app using HTML, CSS, JS, and PHP with Doctor and Admin panels to manage appointments and patient records.</p>
+
+                <a href="https://github.com/namu45/Doctor-s-appointment-system-Minor1-project.git" target="_blank" class="btn-small">View</a>
+            </div>
+        </div>
+        <div class="card animate-up">
+            <img src="{% static 'images/project2.jpg' %}" alt="Online Food Ordering System">
+            <div class="overlay">
+                <h3>Online Food Ordering System</h3>
+                <p>Online Food Ordering System built with HTML, CSS, JavaScript, and PHP, featuring a fully functional admin panel for managing orders, menus, and users.</p>
+                <a href="https://github.com/namu45/Minor-Project--II-Online-Food-Ordering-System-.git" target="_blank" class="btn-small">View</a>
+            </div>
+        </div>
+        <div class="card animate-up">
+            <img src="{% static 'images/project3.jpg' %}" alt="Quiz Application">
+            <div class="overlay">
+                <h3>Quiz Application</h3>
+                <p>Interactive quiz app with scoring built in java and kotlin.</p>
+                <a href="https://github.com/namu45/Quiz-Application-Android-Studio.git" target="_blank" class="btn-small">View</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<!-- <section id="contact" class="contact animate-section">
+    <h2 class="animate-up">Contact Me</h2>
+    <p class="contact-intro animate-up">
+        I’m always open to discussing new projects, opportunities, or collaborations.  
+        Feel free to reach out for freelance work, full-time opportunities, or just to say hello!
+    </p>
+    <form class="animate-up">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section> -->
+<!-- CONTACT -->
+<section id="contact" class="contact animate-section">
+    <h2 class="animate-up">Contact Me</h2>
+    <p class="contact-intro animate-up">
+        I’m always open to discussing new projects, opportunities, or collaborations.  
+        Feel free to reach out for freelance work, full-time opportunities, or just to say hello!
+    </p>
+    <form class="contact-form animate-up">
+        <div class="form-group">
+            <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <textarea placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
+
+
+
+
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-links">
+        <a href="namrataaacharya@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/namrata-sharma-6a9320371/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/namu45" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <p>&copy; 2025 Namrata Sharma | All Right Reserved</p>
+</footer>
+
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
