@@ -6,11 +6,41 @@ body {
   color: #fff;
 }
 /* NAVBAR */
-.navbar{display:flex;justify-content:space-between;align-items:center;padding:20px 50px;background:rgba(0,0,0,0.3);position:fixed;width:100%;top:0;z-index:100;backdrop-filter:blur(10px);}
-.navbar .logo{font-weight:700;font-size:24px;}
-.nav-links{list-style:none;display:flex;gap:25px;}
-.nav-links a{text-decoration:none;color:#fff;font-weight:500;transition:0.3s;}
-.nav-links a:hover{color:#FFD6F0;}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0,0,0,0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* higher z-index to make hamburger clickable */
+    backdrop-filter: blur(10px);
+}
+
+.navbar .logo {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FFD6F0;
+}
 
 /* Hamburger hidden on desktop */
 .hamburger {
@@ -26,19 +56,20 @@ body {
         display: none;          /* hide links by default */
         flex-direction: column;
         width: 100%;
-        background: rgba(0,0,0,0.9);
+        background: rgba(0,0,0,0.95);
         position: absolute;
-        top: 60px;             /* adjust to navbar height */
+        top: 70px;             /* adjust according to navbar height */
         left: 0;
         padding: 10px 0;
     }
 
     .nav-links.active {
-        display: flex;          /* show links when active */
+        display: flex;          /* show links when hamburger clicked */
     }
 
     .hamburger {
         display: block;          /* show hamburger icon */
+        z-index: 1100;           /* above everything */
     }
 
     .nav-links li {
