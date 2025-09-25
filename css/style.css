@@ -17,7 +17,7 @@ body {
     width: 100%;
     top: 0;
     z-index: 1000; /* higher z-index to make hamburger clickable */
-    /* backdrop-filter: blur(10px); */
+    backdrop-filter: none;
 }
 
 .navbar .logo {
@@ -57,7 +57,7 @@ body {
         display: none;           /* hide by default */
         flex-direction: column;
         width: 250px;            /* side panel width */
-        height: 100vh;           /* full height of screen */
+        height: auto;           /* full height of screen */
         background: rgba(0,0,0,0.3);  /* black panel */
         position: fixed;         /* fixed to screen */
         top: 0;
