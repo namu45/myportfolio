@@ -18,3 +18,10 @@ const observer=new IntersectionObserver(entries=>{
     });
 },{threshold:0.1});
 elements.forEach(el=>observer.observe(el));
+
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});

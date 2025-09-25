@@ -6,63 +6,47 @@ body {
   color: #fff;
 }
 /* NAVBAR */
-/* .navbar{display:flex;justify-content:space-between;align-items:center;padding:20px 50px;background:rgba(0,0,0,0.3);position:fixed;width:100%;top:0;z-index:100;backdrop-filter:blur(10px);}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:20px 50px;background:rgba(0,0,0,0.3);position:fixed;width:100%;top:0;z-index:100;backdrop-filter:blur(10px);}
 .navbar .logo{font-weight:700;font-size:24px;}
 .nav-links{list-style:none;display:flex;gap:25px;}
 .nav-links a{text-decoration:none;color:#fff;font-weight:500;transition:0.3s;}
-.nav-links a:hover{color:#FFD6F0;} */
-/* NAVBAR */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background: rgba(0,0,0,0.3);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-    backdrop-filter: blur(10px);
-    flex-wrap: wrap; /* allow wrapping on small screens */
-}
+.nav-links a:hover{color:#FFD6F0;}
 
-.navbar .logo {
-    font-weight: 700;
-    font-size: 24px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    flex-wrap: wrap; /* wrap links if viewport is small */
-}
-
-.nav-links a {
-    text-decoration: none;
+/* Hamburger hidden on desktop */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
     color: #fff;
-    font-weight: 500;
-    transition: 0.3s;
 }
 
-.nav-links a:hover {
-    color: #FFD6F0;
-}
-
-/* Mobile / small screens */
+/* Mobile styles */
 @media (max-width: 768px) {
-    .navbar {
-        padding: 15px 20px;
-    }
-
     .nav-links {
-        gap: 15px; /* reduce space between links */
+        display: none;          /* hide links by default */
+        flex-direction: column;
+        width: 100%;
+        background: rgba(0,0,0,0.9);
+        position: absolute;
+        top: 60px;             /* adjust to navbar height */
+        left: 0;
+        padding: 10px 0;
     }
 
-    .nav-links a {
-        font-size: 14px; /* smaller font for small screens */
+    .nav-links.active {
+        display: flex;          /* show links when active */
+    }
+
+    .hamburger {
+        display: block;          /* show hamburger icon */
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
     }
 }
+
 
 /* HERO */
 .hero{display:flex;align-items:center;justify-content:center;height:100vh;padding-top:80px;gap:50px;flex-wrap:wrap;text-align:center;}
